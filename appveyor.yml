@@ -6,7 +6,7 @@ environment:
   Author: "Transport For London"
   Description: "Formats a task with additional information."
   ProjectUri: "https://github.com/TransportForLondon/TFL.Powershell.Format-Task"
-  LicenseUri: "https://github.com/TransportForLondon/TFL.Powershell.Format-Task/blob/master/LICENSE"
+  LicenseUri: "https://github.com/TransportForLondon/TFL.Powershell.Format-Task/blob/main/LICENSE"
   FunctionsToExport: "Format-Task"
   Copyright: "Copyright 2018 Transport for London"
   Tags: "Write;Format;Task"
@@ -40,7 +40,7 @@ deploy:
     skip_symbols: true
     artifact: /.*\.nupkg/
     on:
-      branch: master
+      branch: main
 
   - provider: GitHub
     description: ""
@@ -48,7 +48,7 @@ deploy:
       secure: NA7rOXSGoqGEUx+NyEMmIxzRsHXKCohqiDdrokBOhZxF3JbafUEd7IoxRrP+/wnQ
     artifact: /.*\.nupkg/
     on:
-      branch: master
+      branch: main
 
 notifications:
   - provider: Webhook
